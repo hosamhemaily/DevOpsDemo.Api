@@ -14,7 +14,8 @@ public class ProductsController : ControllerBase
         {
             new { Id = 1, Name = "Laptop", Price = 25000 },
             new { Id = 2, Name = "Mouse", Price = 500 },
-            new { Id = 3, Name = "Keyboard", Price = 1200 }
+            new { Id = 3, Name = "Keyboard", Price = 1200 },
+            new { Id = 3, Name = "SCREEN", Price = 1200 }
         };
 
         return Ok(products);

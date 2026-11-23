@@ -28,12 +28,12 @@ app.UseCors("AngularPolicy");
 app.UseAuthorization();
 
 app.MapControllers();
-//app.MapGet("/health", () =>
-//    Results.Ok(new
-//    {
-//        status = "Healthy",
-//        application = "DevOpsDemo.Api"
-//    }));
 app.MapGet("/health", () =>
-    Results.StatusCode(500));
+    Results.Ok(new
+    {
+        status = "Healthy",
+        application = "DevOpsDemo.Api"
+    }));
+//app.MapGet("/health", () =>
+//    Results.StatusCode(500));
 app.Run();
